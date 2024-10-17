@@ -11,7 +11,8 @@
   <h2 class = "centered">View Jobs By Category</h2>
 </div>
 
-<table class="centeredTable">
+<!--took out centeredTable-->
+<table class="job-listing">
   <tr>
     <th:block th:each="column : ${columns}">
       <th th:text = "${column.value}"></th>
@@ -20,7 +21,7 @@
   <tr>
     <!-- TODO #2: Complete the View Jobs By Category Table. -->
 
-    <td></td> <!-- Feel free to remove or modify this element if necessary. -->
+    <td><a href="/list/jobs?column=all">View All</a></td> <!-- Feel free to remove or modify this element if necessary. -->
 
     <td th:each="category : ${tableChoices}">
       <ul>
